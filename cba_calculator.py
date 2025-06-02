@@ -105,9 +105,9 @@ with calc_tab:
     base_low_pct, base_high_pct = 0.0025, 0.0075  # 0.25 % – 0.75 %
     pct_multiplier = 1.0
     if ej_flag:
-        pct_multiplier *= 1.5
+        pct_multiplier *= 1.15
     if urban_flag:
-        pct_multiplier *= 1.5
+        pct_multiplier *= 1.15
 
     cba_low_pct = base_low_pct * pct_multiplier
     cba_high_pct = base_high_pct * pct_multiplier
@@ -151,7 +151,7 @@ with rec_tab:
         **Adder Definitions**
         | Adder | Multiplier | Description |
         |-------|-----------:|-------------|
-        | Environmental‑Justice (EJ) | 1.5 × | Census tracts with disproportionate environmental or socio‑economic burdens |
-        | Urban Density | 1.5 × | Sites within densely populated areas where community impact is higher |
+        | Environmental‑Justice (EJ) | 1.15 × | Census tracts with disproportionate environmental or socio‑economic burdens |
+        | Urban Density | 1.15 × | Sites within densely populated areas where community impact is higher |
         """
     )
